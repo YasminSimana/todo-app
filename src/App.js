@@ -1,15 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { TasksPage } from './pages/TasksPage';
+import { Button, Form } from 'react-bootstrap';
 
 function App() {
   return (
 
-    <div>
-
-    <TasksPage test = "test"/>
-
+    <div className="App">
+      <TasksPage test = "test"/>
     </div>
     // <div className="App">
     //   <header className="App-header">
