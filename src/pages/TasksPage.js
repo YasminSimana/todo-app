@@ -35,10 +35,6 @@ export function TasksPage(props) {
         const newTasksArr = tasks.filter((item)=>tasks.indexOf(item) !== index)
         setTasks(newTasksArr);
     }
-    
-    // const newList = list.filter((item) => item.id !== id);
- 
-    // setList(newList);
 
     //convert data to presentation
     let filteredTasks = tasks;

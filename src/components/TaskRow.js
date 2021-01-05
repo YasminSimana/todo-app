@@ -50,21 +50,13 @@ export function TaskRow(props) {
 
     let deleteClassesObj = "";
     
-    let taskRow;
-    // if (task.isCompleted) {
-    //     rowClassesObj.completed = true;
-    // }
-
-    // if (toDelete){
-    //     classesObj.isHover = true;
-    // }
-    taskRow = 
+    let taskRow = 
     <ListGroupItem className={rowClassesObj} onMouseEnter={enterRow} onMouseLeave={leaveRow} variant="light" >{task.description}
         <input value={isCompleted} onChange={markIsCompleted} type="checkbox" className="on-front" id="defaultChecked2"/>
         <Button className={deleteClassesObj} onClick={deleteTask}>
             <BsXSquare></BsXSquare>
         </Button>
-    </ListGroupItem>
+    </ListGroupItem>    
  
 
     return (
