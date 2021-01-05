@@ -3,6 +3,10 @@
     text-decoration: line-through;
 }
 
+.isHover {
+    color: blue;
+}
+
 .on-back {
     position: relative;
 }
@@ -12,4 +16,8 @@
     left: 0;
     width: 1rem;
     height: 1.25rem;
+}
+
+.invisibleIcon{
+    display: none;
 }
