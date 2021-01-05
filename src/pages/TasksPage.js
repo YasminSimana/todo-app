@@ -28,7 +28,10 @@ export function TasksPage(props) {
     }
 
     function deleteTask(index) {
-        reduceCounter(-1);
+        if(!tasks[index].isCompleted) {
+            alert("You deleted an open task");
+            reduceCounter(-1);
+        }
         const newTasksArr = tasks.filter((item)=>tasks.indexOf(item) !== index)
         setTasks(newTasksArr);
     }
