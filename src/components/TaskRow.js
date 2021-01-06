@@ -7,7 +7,7 @@ import { BsXSquare } from "react-icons/bs";
 export function TaskRow(props) {
     const {task, count, isDeleted, index} = props;
     const [isCompleted, setIsCompleted] = React.useState(task.isCompleted);
-    const [toDelete, setToDelete] = React.useState(true);
+    const [toDelete, setToDelete] = React.useState(false);
     
 
     function markIsCompleted(e){
@@ -45,7 +45,7 @@ export function TaskRow(props) {
     
     let rowClassesObj = classNames({
         'completed': isCompleted,
-        'isHover': toDelete
+        'is-hover': toDelete
     });
 
     let deleteClassesObj = "";
@@ -53,7 +53,7 @@ export function TaskRow(props) {
     let taskRow = 
     <ListGroupItem className={rowClassesObj} onMouseEnter={enterRow} onMouseLeave={leaveRow} variant="light" >{task.description}
         <input value={isCompleted} onChange={markIsCompleted} type="checkbox" className="on-front" id="defaultChecked2"/>
-        <Button className={deleteClassesObj} onClick={deleteTask}>
+        <Button className="invisible-icon" onClick={deleteTask}>
             <BsXSquare></BsXSquare>
         </Button>
     </ListGroupItem>    

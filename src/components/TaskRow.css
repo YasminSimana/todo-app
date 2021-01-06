@@ -2,10 +2,10 @@
     color: lightslategray;
     text-decoration: line-through;
 }
-
-.isHover {
+/* 
+.is-hover {
     color: blue;
-}
+} */
 
 .on-back {
     position: relative;
@@ -18,6 +18,10 @@
     height: 1.25rem;
 }
 
-.invisibleIcon{
+.invisible-icon{
     display: none;
+}
+
+.is-hover .invisible-icon{
+    display: initial;
 }
